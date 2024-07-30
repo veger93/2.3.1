@@ -1,5 +1,7 @@
 
 
-java:S1192 "KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(äÔ¶½8¹¦š2J$ac06c856-0c5e-4e49-9893-3562f14665b8
+java:S1192""KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(äÔ¶½8‰ìŸ¤2J$5bb1be8e-bb6a-4bf2-82a9-00da73cd9cbb
 ˆ
-java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(Ï¶º¢øÿÿÿÿ8ÆùÚ™2J$67edc2fb-bef9-4d4b-9704-01faf4cbe576
+java:S4684 "@Replace this persistent entity with a simple POJO or DTO object.(Ï¶º¢øÿÿÿÿ8¶ìŸ¤2J$713cd8e0-1cbd-4525-b58d-4cbf6d010c88
+‚
+java:S4684,"@Replace this persistent entity with a simple POJO or DTO object.(Æ“À\8¾ìŸ¤2J$349bc5c0-37b4-48b1-ab90-c7a2bf9bed30

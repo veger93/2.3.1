@@ -11,6 +11,7 @@ import web.service.UserService;
 @RequestMapping()
 public class UserController {
     private final UserService userService;
+
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
@@ -21,6 +22,7 @@ public class UserController {
         model.addAttribute("usersList", userService.allUser());
         return "users";
     }
+
     @GetMapping("users/add")
     public String addForm() {
         return "/user_form";
@@ -32,20 +34,20 @@ public class UserController {
         return "redirect:/";
     }
 
-    @GetMapping("/edit/{id}")
-    public String edit(Model model, @PathVariable("id") int id) {
+    @GetMapping("/edit")
+    public String edit(@RequestParam("user") int id, Model model) {
         model.addAttribute("user", userService.getById(id));
         return "/editPage";
     }
 
-    @PatchMapping("/edit/{id}")
-    public String update(@PathVariable("id") int id) {
-        userService.edit(userService.getById(id));
+    @PostMapping("/edit")
+    public String update(@ModelAttribute User user) {
+        userService.edit(user);
         return "redirect:/";
     }
 
-    @DeleteMapping("/delete/{id}")
-    public String deleteUser(@PathVariable("id") int id) {
+    @GetMapping("/delete")
+    public String deleteUser(@RequestParam("user") int id) {
         userService.delete(id);
         return "redirect:/";
     }

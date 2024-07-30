@@ -13,7 +13,8 @@
 <div class="container-fluid">
     <div class="text-center"><h2>Edit User</h2></div>
 
-    <form th:method="PATCH" th:action="@{/edit/{id}(id=${user.getId()})}" th:object="${user}">
+    <form th:method="POST" th:action="@{/edit}" th:object="${user}">
+        <input type="hidden" th:field="*{id}" />
         <label for="name">Name</label>
         <input type="text" th:field="*{name}" id="name"/><br/>
 
