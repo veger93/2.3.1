@@ -1,0 +1,5 @@
+
+Õ
+java:S4449"˜Annotate the parameter with @javax.annotation.Nullable in method 'setDriverClassName' declaration, or make sure that null can not be passed as argument.(òÒà½J$5517b1c2-dae8-489e-ad88-1c3b748e2758
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$438984b3-45fa-4662-8402-f5d9f58a2599
